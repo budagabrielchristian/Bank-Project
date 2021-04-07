@@ -92,7 +92,7 @@ class bankDatabase {
                         payedTaxes += money - moneyWithTaxes;
 
                         System.out.print(tmpName.getName() +'('+tmpName.getCardNumber()+')'+':' + tmpName.getDepositedMoney() + "$ (-" + money + "$)"+" -----> ");
-                        System.out.println(tmpNameTwo.getName() + '('+tmpName.getCardNumber()+')'+':' + tmpNameTwo.getDepositedMoney() + "$ (+" + moneyWithTaxes + "$)");
+                        System.out.println(tmpNameTwo.getName() + '('+tmpNameTwo.getCardNumber()+')'+':' + tmpNameTwo.getDepositedMoney() + "$ (+" + moneyWithTaxes + "$)");
                         totalTransfers.add("\n"+tmpName.getName() +'('+tmpName.getCardNumber()+')'+':' + tmpName.getDepositedMoney() + "(-" + money + "$)"+" -----> "+tmpNameTwo.getName() + ':' + tmpNameTwo.getDepositedMoney() + "(+" + moneyWithTaxes + "$)"+"\n");
 
 
