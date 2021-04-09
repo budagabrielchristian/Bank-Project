@@ -1,10 +1,9 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 class bankDatabase {
     protected List<bankAccount> accountsList = new ArrayList<>();
-    protected List<String> totalTransfers = new ArrayList<>();
+        Stack<String> totalTransfers = new Stack<>();
+
     double payedTaxes;
     double totalMoney;
 
@@ -106,7 +105,10 @@ class bankDatabase {
         System.out.print('$');
     }
     public void printAllTransfers(){
-        System.out.println(totalTransfers);
+    for(int i = totalTransfers.size() - 1; i>=0; i--){
+        System.out.println(totalTransfers.get(i));
+    }
+
     }
 
 }
